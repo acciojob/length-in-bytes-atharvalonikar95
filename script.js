@@ -5,7 +5,7 @@ const byteSize = (str) => {
 	// 	return 0
 	// }
 
-	return Buffer.byteLength(str, "utf8")
+	return new TextEncoder().encode(str).length;
 
 };
 
